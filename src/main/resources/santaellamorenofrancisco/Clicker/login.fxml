@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #7400FF;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="santaellamorenofrancisco.Clicker.LoginController">
+   <children>
+      <ImageView fitHeight="726.0" fitWidth="1594.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/abstract-black-green-shapes-wallpaper-preview.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="200.0" fitWidth="200.0" layoutX="540.0" layoutY="-29.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="549.0" AnchorPane.leftAnchor="540.0" AnchorPane.rightAnchor="540.0" AnchorPane.topAnchor="-29.0">
+         <image>
+            <Image url="@../Imagenes/logo_transparent.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="151.0" prefHeight="576.0" prefWidth="1289.0" style="-fx-background-color: #FDFEFE;" AnchorPane.bottomAnchor="-7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-9.0" AnchorPane.topAnchor="151.0">
+         <children>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="500.0" layoutY="204.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="500.0">
+               <image>
+                  <Image url="@../Imagenes/Perfil.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="500.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="500.0">
+               <image>
+                  <Image url="@../Imagenes/candado.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="836.0" layoutY="437.0" prefWidth="149.0" text="Forgot Password?" AnchorPane.bottomAnchor="112.0" AnchorPane.rightAnchor="304.0">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+            <Label layoutX="539.0" layoutY="76.0" text="Welcome!" AnchorPane.bottomAnchor="432.0">
+               <font>
+                  <Font size="46.0" />
+               </font></Label>
+            <JFXButton fx:id="singUpB" layoutX="341.0" layoutY="421.0" onAction="#switchToRegistro" prefHeight="32.0" prefWidth="71.0" style="-fx-background-color: #186A3B;" text="Sing up" textFill="WHITE" AnchorPane.bottomAnchor="123.0" AnchorPane.leftAnchor="341.0" />
+            <TextField fx:id="txtUser" layoutX="566.0" layoutY="208.0" promptText="Nickname" />
+            <PasswordField fx:id="txtPass" layoutX="566.0" layoutY="271.0" promptText="Password" />
+            <JFXButton fx:id="logB" layoutX="594.0" layoutY="374.0" onAction="#logUser" onDragDetected="#logUser" prefHeight="47.0" prefWidth="94.0" style="-fx-background-color: #186A3B;" text="Login" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

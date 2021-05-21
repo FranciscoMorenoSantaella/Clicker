@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="152.0" prefWidth="246.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="santaellamorenofrancisco.Clicker.ChangeNickController">
+   <children>
+      <Text layoutX="60.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter the new nickname" />
+      <JFXButton fx:id="confirm" layoutX="94.0" layoutY="113.0" onAction="#changeNick" style="-fx-background-color: #3780F1;" text="Confirm" />
+      <TextField fx:id="txt" layoutX="49.0" layoutY="64.0" />
+   </children>
+</AnchorPane>

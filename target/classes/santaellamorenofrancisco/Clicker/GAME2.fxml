@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="santaellamorenofrancisco.Clicker.GameController">
+   <children>
+      <JFXButton fx:id="clickB" layoutX="573.0" layoutY="316.0" onAction="#Handle" opacity="0.0" prefHeight="89.0" prefWidth="176.0" style="-fx-background-color: #09B4B4; " text="Button" />
+      <Text fx:id="txt" layoutX="639.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <ToolBar layoutX="-1.0" layoutY="614.0" prefHeight="106.0" prefWidth="1280.0">
+         <items>
+            <ImageView fitHeight="47.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imagenes/Opciones.png" />
+               </image>
+            </ImageView>
+            <Separator orientation="VERTICAL" prefHeight="106.0" prefWidth="188.0">
+               <padding>
+                  <Insets left="50.0" right="75.0" />
+               </padding>
+            </Separator>
+            <ImageView fitHeight="47.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imagenes/shop.png" />
+               </image>
+            </ImageView>
+            <Separator orientation="VERTICAL" prefHeight="106.0" prefWidth="213.0">
+               <padding>
+                  <Insets left="75.0" right="75.0" />
+               </padding>
+            </Separator>
+            <ImageView fitHeight="78.0" fitWidth="111.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imagenes/Boton.png" />
+               </image>
+            </ImageView>
+            <Separator orientation="VERTICAL" prefHeight="106.0" prefWidth="176.0">
+               <padding>
+                  <Insets left="50.0" right="75.0" />
+               </padding>
+            </Separator>
+            <ImageView fx:id="iv" fitHeight="47.0" fitWidth="103.0" onMouseClicked="#switchToRanking" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imagenes/trofeo.png" />
+               </image>
+            </ImageView>
+            <Separator orientation="VERTICAL" prefHeight="106.0" prefWidth="147.0">
+               <padding>
+                  <Insets left="75.0" right="75.0" />
+               </padding>
+            </Separator>
+            <ImageView fitHeight="47.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Imagenes/Perfil.png" />
+               </image>
+            </ImageView>
+         </items>
+         <padding>
+            <Insets left="75.0" right="75.0" />
+         </padding>
+      </ToolBar>
+      <ImageView fitHeight="246.0" fitWidth="351.0" focusTraversable="true" layoutX="538.0" layoutY="238.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/Boton.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="iv2" disable="true" fitHeight="62.0" fitWidth="124.0" focusTraversable="true" layoutX="599.0" layoutY="341.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Imagenes/hit.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
